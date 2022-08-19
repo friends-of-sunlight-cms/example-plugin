@@ -1,0 +1,11 @@
+div.example {
+    background-color: #ec8b5e;
+    border: 5px dashed #f00;
+    text-align: center;
+}
+
+div.example img {
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+}

@@ -1,0 +1,22 @@
+{
+    "$schema": "../../../system/schema/extend.json",
+    "name": "Example",
+    "description": "An example of creating a plugin for Sunlight CMS.",
+    "version": "1.0.0",
+    "environment": {
+        "system": "^8.0"
+    },
+    "url": "https://mydomain.tld",
+    "class": "ExamplePlugin",
+    "langs": {
+        "example": "lang"
+    },
+    "events": [],
+    "events.web": [
+        {"event": "tpl.head", "method": "onHead"},
+        {"event": "tpl.content", "method": "onPageContent"}
+    ],
+    "events.admin": [
+        {"event": "admin.head", "method": "onHead"}
+    ]
+}
