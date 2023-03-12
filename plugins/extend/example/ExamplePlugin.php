@@ -9,7 +9,6 @@ class ExamplePlugin extends ExtendPlugin
 
     /**
      * Inject custom CSS and JS
-     * @param array $args
      */
     function onHead(array $args): void
     {
@@ -21,7 +20,6 @@ class ExamplePlugin extends ExtendPlugin
     /**
      * This method is a callback for event 'tpl.content',
      * the event definition can be found in the 'plugin.json' file
-     * @param array $args
      */
     function onPageContent(array $args): void
     {
