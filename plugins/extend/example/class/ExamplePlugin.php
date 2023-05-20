@@ -13,8 +13,8 @@ class ExamplePlugin extends ExtendPlugin
     function onHead(array $args): void
     {
         $path = $this->getWebPath();
-        $args['css'][] = $path . '/resources/css/example.css';
-        $args['js'][] = $path . '/resources/js/example.js';
+        $args['css'][] = $path . '/public/css/example.css';
+        $args['js'][] = $path . '/public/js/example.js';
     }
 
     /**
@@ -26,7 +26,7 @@ class ExamplePlugin extends ExtendPlugin
         // add an example image to the end of each page
         $args['content'] .= '<div class="example">'
             . '<h3>' . _lang('example.plugin.name') . '</h3>'
-            . '<img src="' . $this->getWebPath() . '/resources/images/example.png" alt="Example image" title="' . _lang('example.image.title') . '">'
+            . '<img src="' . $this->getWebPath() . '/public/images/example.png" alt="Example image" title="' . _lang('example.image.title') . '">'
             . '</div>';
     }
 

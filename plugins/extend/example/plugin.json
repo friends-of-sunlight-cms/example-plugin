@@ -2,11 +2,13 @@
     "$schema": "../../../system/schema/extend.json",
     "name": "Example",
     "description": "An example of creating a plugin for Sunlight CMS.",
-    "version": "0.9.0",
+    "version": "0.9.1",
     "environment": {
         "system": "^8.0"
     },
-    "url": "https://mydomain.tld",
+    "authors": [
+        {"name": "MyName", "url": "mydomain.tld"}
+    ],
     "class": "ExamplePlugin",
     "langs": {
         "example": "lang"
