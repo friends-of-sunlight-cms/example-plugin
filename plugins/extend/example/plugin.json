@@ -1,27 +1,24 @@
 {
-  "$schema": "../../../system/schema/extend.json",
-  "name": "Example",
-  "description": "An example of creating a plugin for Sunlight CMS.",
-  "version": "0.9.2",
-  "environment": {
-    "system": "^8.0"
-  },
-  "authors": [
-    {
-      "name": "MyName",
-      "url": "mydomain.tld"
-    }
-  ],
-  "class": "ExamplePlugin",
-  "langs": {
-    "example": "lang"
-  },
-  "events": [],
-  "events.web": [
-    {"event": "tpl.head", "method": "onHead"},
-    {"event": "tpl.content", "method": "onPageContent"}
-  ],
-  "events.admin": [
-    {"event": "admin.head", "method": "onHead"}
-  ]
+    "$schema": "../../../system/schema/extend.json",
+    "name": "Example",
+    "description": "An example of creating a plugin for Sunlight CMS.",
+    "version": "0.9.2",
+    "environment": {
+        "system": "^8.0"
+    },
+    "authors": [
+        {"name": "MyName", "url": "mydomain.tld"}
+    ],
+    "class": "ExamplePlugin",
+    "langs": {
+        "example": "lang"
+    },
+    "events": [],
+    "events.web": [
+        {"event": "tpl.head", "method": "onHead"},
+        {"event": "tpl.content", "method": "onPageContent"}
+    ],
+    "events.admin": [
+        {"event": "admin.head", "method": "onHead"}
+    ]
 }
