@@ -2,23 +2,26 @@
     "$schema": "../../../system/schema/extend.json",
     "name": "Example",
     "description": "An example of creating a plugin for Sunlight CMS.",
+    "authors": [
+        {"name": "MyName", "url": "mydomain.tld"}
+    ],
     "version": "0.9.2",
     "environment": {
         "system": "^8.0"
     },
-    "authors": [
-        {"name": "MyName", "url": "mydomain.tld"}
-    ],
-    "class": "ExamplePlugin",
+    "config_defaults": {
+        "heading_size": 3,
+        "show_image": true
+    },
     "langs": {
         "example": "lang"
     },
     "events": [],
     "events.web": [
-        {"event": "tpl.head", "method": "onHead"},
-        {"event": "tpl.content", "method": "onPageContent"}
+        {"event": "tpl.head", "script": "event/head_assets.php"},
+        {"event": "tpl.content", "script": "event/page_content.php"}
     ],
     "events.admin": [
-        {"event": "admin.head", "method": "onHead"}
+        {"event": "admin.head", "script": "event/register.php"}
     ]
 }
