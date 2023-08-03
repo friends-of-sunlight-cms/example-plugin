@@ -18,10 +18,10 @@
     },
     "events": [],
     "events.web": [
-        {"event": "tpl.head", "script": "event/asset_register.php"},
-        {"event": "tpl.content", "script": "event/modify_page_content.php"}
+        {"event": "tpl.head", "script": "event/head_assets.php"},
+        {"event": "tpl.content", "script": "event/page_content.php"}
     ],
     "events.admin": [
-        {"event": "admin.head", "script": "event/asset_register.php"}
+        {"event": "admin.head", "script": "event/register.php"}
     ]
 }
