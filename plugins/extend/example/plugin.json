@@ -22,6 +22,6 @@
         {"event": "tpl.content", "script": "event/page_content.php"}
     ],
     "events.admin": [
-        {"event": "admin.head", "script": "event/register.php"}
+        {"event": "admin.head", "script": "event/head_assets.php"}
     ]
 }
