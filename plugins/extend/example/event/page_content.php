@@ -4,8 +4,8 @@
  * Add an example image to the end of each page
  */
 return function (array $args) {
-    $headingSize = $this->getConfig()->offsetGet('heading_size');
-    $showImage = $this->getConfig()->offsetGet('show_image');
+    $headingSize = $this->getConfig()['heading_size'];
+    $showImage = $this->getConfig()['show_image'];
 
     $args['content'] .= '<div class="example">'
         . '<h' . $headingSize . '>' . _lang('example.plugin.name') . '</h' . $headingSize . '>'
